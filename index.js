@@ -14,8 +14,9 @@ const options = {
 
 const fuse = new Fuse(lstAirportNames.airportList, options);
 
+const port=process.env.PORT || 3000;
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server running on port 3000");
  });
 
