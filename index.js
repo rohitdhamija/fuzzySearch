@@ -40,3 +40,8 @@ app.get("/findItems", (req, res, next) => {
     console.log(result);
     res.json(airportObj);
    });
+
+   app.get("/", (req, res, next) => {
+    var infoObj = "A node program to implement fuzzysearch. To test try http://<URL>/findItems?resolvedEntity=%ENTER_AIRPORT_NAME"  ;
+    res.json(infoObj);
+   });
